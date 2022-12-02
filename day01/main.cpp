@@ -40,7 +40,6 @@ std::vector<int> sumGroups(const std::vector<std::string> &lines) {
     return totals;
 }
 
-
 int main() {
     std::cout << "Advent of Code. Day 1. https://adventofcode.com/2022/day/1\n";
     std::vector<std::string> lines = readFile("input.txt");
