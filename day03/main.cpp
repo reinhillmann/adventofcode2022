@@ -84,11 +84,8 @@ int main() {
 
     {
         int score = 0;
-        for (unsigned int i = 0; i < lines.size(); i+=3) {
-            const std::string line1 = lines[i];
-            const std::string line2 = lines[i+1];
-            const std::string line3 = lines[i+2];
-            score += scoreForBadges(line1, line2, line3);
+        for (auto i = 0; i < lines.size(); i+=3) {
+            score += scoreForBadges(lines[i], lines[i+1], lines[i+2]);
         }
         std::cout << "(Part 2) Score:   " << score << "\n";
     }
